@@ -60,14 +60,14 @@
                 symbol_layer {
 // -----------------------------------------------------------------------------------------
 // |  `  |  !  |  @  |  #  |  $  |  %  |             |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// |     |     |     |     |     |     |             |  -  |  =  |     |  [  |  ]  |  \   |
+// |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |             |  -  |  =  |     |  [  |  ]  |  \   |
 // |     |     |     |     |     |     |             |  _  |  +  |     |  <  |  >  |  ~   |
 //                   | GUI |     | SPC |             | ENT |     | ALT |
                         bindings = <
-   &kp TILDE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &trans    &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &trans    &kp LBKT  &kp RBKT &kp BSLH
-   &trans    &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &trans    &kp LBRC  &kp RBRC &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp TILDE  &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT         &kp CARET   &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp MINUS   &kp EQUAL  &trans     &kp LBKT  &kp RBKT  &kp BSLH
+   &trans     &trans       &trans       &trans       &trans       &trans            &kp UNDER   &kp PLUS   &trans     &kp LBRC  &kp RBRC  &kp TILDE
+                                        &kp LGUI     &trans       &kp SPACE         &kp RET     &trans     &kp RALT
                         >;
                 };
         };
