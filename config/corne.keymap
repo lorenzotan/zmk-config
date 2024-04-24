@@ -14,13 +14,13 @@
 
 / {
         behaviors {
-                l_skp_wrd : l_skip_word {
+                l_skp_wrd: l_skip_word {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <100>;
                         bindings = <&kp LA(LEFT)>, <&kp HOME>;
                 };
-                r_skp_wrd : r_skip_word {
+                r_skp_wrd: r_skip_word {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <100>;
