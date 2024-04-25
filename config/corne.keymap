@@ -31,7 +31,7 @@
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&tog NAVNUM>, <&tog SYMBOL>;
+                        bindings = <&tog NAVNUM>, <&tog SYMBOL>, <&tog FUNCTION>;
                 };
         };
         keymap {
@@ -41,13 +41,13 @@
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |            |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // |  TAB |  A  |  S  |  D  |  F  |  G  |            |  H  |  J   |  K  |  L  |  ;  |  '   |
-// |  FN  |  Z  |  X  |  C  |  V  |  B  |            |  N  |  M   |  ,  |  .  |  /  |      |
+// |  LCTRL  |  Z  |  X  |  C  |  V  |  B  |            |  N  |  M   |  ,  |  .  |  /  |      |
 //                    | GUI | SPC |LSHFT|            | NUM | RET  |     |
                         bindings = <
-   &kp ESC        &lt LG(Q) Q  &lt LG(W) W    &kp E        &lt LG(R) R  &lt LG(T) T        &kp Y        &kp U    &kp I      &lt LG(O) O  &lt LG(P) P  &kp BSPC
-   &kp TAB        &lt LG(A) A  &lt LG(S) S    &kp D        &lt LG(F) F  &kp G              &kp H        &kp J    &kp K      &kp L        &kp SEMI     &kp SQT
-   &tog FUNCTION  &lt LG(Z) Z  &lt LG(X) X    &lt LG(C) C  &lt LG(V) V  &kp B              &lt LG(N) N  &kp M    &kp COMMA  &kp DOT      &kp FSLH     &none
-                                              &kp LGUI     &kp SPACE    &lt LSHFT CAPS     &num_sym     &kp RET  &none
+   &kp ESC        &kp Q        &kp W          &kp E        &kp R        &kp T              &kp Y        &kp U       &kp I       &kp O        &kp P           &kp BSPC
+   &kp TAB        &mt LSHFT A  &mt LCTRL S    &mt LALT D   &mt LGUI F   &kp G              &kp H        &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT SEMI  &kp SQT
+   &none          &kp Z        &kp X          &kp C        &kp V        &kp B              &kp N        &kp M       &kp COMMA   &kp DOT      &kp FSLH        &none
+                                              &kp LGUI     &kp SPACE    &kp LSHFT          &num_sym     &kp RET     &none
                         >;
                 };
                 num_layer {
@@ -82,13 +82,13 @@
 // -----------------------------------------------------------------------------------------
 // |  F1   |  F2   |  F3   |  F4     |  F5     |  F6   |       |  F7   |  F8      |  F9      |  F10     |  F11  | F12 |
 // | CMD 1 | CMD 2 | CMD 3 | CMD 4   | CMD 5   | CMD 6 |       | BTCLR | BT1      | BT2      |          |       |     |
-// |       |       |       | Disp DN | Disp UP |       |       | MUTE  | Vol UP   | Vol DN   |          |       |     |
+// |       |       |       | Disp DN | Disp UP |       |       |       | MUTE     | Vol DN   | Vol UP   |       |     |
 //                         | GUI     | SPC     |       |       | DEF   |          |          |
                         bindings = <
    &kp F1     &kp F2     &kp F3       &kp F4        &kp F5        &kp F6            &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
    &kp LG(1)  &kp LG(2)  &kp LG(3)    &kp LG(4)     &kp LG(5)     &kp LG(6)         &bt BT_CLR     &bt BT_SEL 0  &bt BT_SEL 1  &none         &none         &none
-   &none      &none      &none        &kp C_BRI_DN  &kp C_BRI_UP  &none             &kp C_MUTE     &kp C_VOL_DN  &kp C_VOL_UP  &none         &none         &none
-                                      &kp LGUI      &kp SPACE     &lt LSHFT CAPS    &to DEFAULT   &none         &none
+   &none      &none      &none        &kp C_BRI_DN  &kp C_BRI_UP  &none             &none          &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &none         &none
+                                      &kp LGUI      &kp SPACE     &kp LSHFT         &to DEFAULT    &none         &none
                         >;
                 };
         };
