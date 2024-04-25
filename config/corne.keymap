@@ -44,10 +44,10 @@
 // |  FN  |  Z  |  X  |  C  |  V  |  B  |            |  N  |  M   |  ,  |  .  |  /  |      |
 //                    | GUI | SPC |LSHFT|            | NUM | RET  |     |
                         bindings = <
-   &kp ESC        &mt LG(Q) Q  &mt LG(W) W    &kp E        &mt LG(R) R  &mt LG(T) T        &kp Y        &kp U    &kp I      &mt LG(O) O  &mt LG(P) P  &kp BSPC
-   &kp TAB        &mt LG(A) A  &mt LG(S) S    &kp D        &mt LG(F) F  &kp G              &kp H        &kp J    &kp K      &kp L        &kp SEMI     &kp SQT
-   &tog FUNCTION  &mt LG(Z) Z  &mt LG(X) X    &mt LG(C) C  &mt LG(V) V  &kp B              &mt LG(N) N  &kp M    &kp COMMA  &kp DOT      &kp FSLH     &none
-                                              &kp LGUI     &kp SPACE    &mt LSHFT CAPS     &num_sym     &kp RET  &none
+   &kp ESC        &lt LG(Q) Q  &lt LG(W) W    &kp E        &lt LG(R) R  &lt LG(T) T        &kp Y        &kp U    &kp I      &lt LG(O) O  &lt LG(P) P  &kp BSPC
+   &kp TAB        &lt LG(A) A  &lt LG(S) S    &kp D        &lt LG(F) F  &kp G              &kp H        &kp J    &kp K      &kp L        &kp SEMI     &kp SQT
+   &tog FUNCTION  &lt LG(Z) Z  &lt LG(X) X    &lt LG(C) C  &lt LG(V) V  &kp B              &lt LG(N) N  &kp M    &kp COMMA  &kp DOT      &kp FSLH     &none
+                                              &kp LGUI     &kp SPACE    &lt LSHFT CAPS     &num_sym     &kp RET  &none
                         >;
                 };
                 num_layer {
@@ -60,7 +60,7 @@
    &kp ESC    &none  &l_skp_wrd   &kp UP     &r_skp_wrd    &kp PG_UP      &kp SLASH   &kp N7   &kp N8  &kp N9  &kp MINUS  &kp BSPC
    &kp TAB    &none  &kp LEFT     &kp DOWN   &kp RIGHT     &kp PG_DN      &kp ASTRK   &kp N4   &kp N5  &kp N6  &kp PLUS   &none
    &kp LSHFT  &none  &none        &none      &none         &none          &kp PERIOD  &kp N1   &kp N2  &kp N3  &kp RET    &kp RSHFT
-                                  &kp LGUI   &kp SPACE     &kp LSHFT      &tog DEFAULT &kp N0   &none
+                                  &kp LGUI   &kp SPACE     &kp LSHFT      &to DEFAULT &kp N0   &none
                         >;
                 };
 
@@ -74,7 +74,7 @@
    &kp TILDE  &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT         &kp CARET   &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
    &none      &none        &none        &none        &none        &none             &kp MINUS   &kp EQUAL  &none      &kp LBKT  &kp RBKT  &kp BSLH
    &none      &none        &none        &none        &none        &none             &kp UNDER   &kp PLUS   &none      &kp LBRC  &kp RBRC  &none
-                                        &kp LGUI     &kp SPACE    &kp LSHFT         &tog DEFAULT &kp RET    &kp RALT
+                                        &kp LGUI     &kp SPACE    &kp LSHFT         &to DEFAULT &kp RET    &kp RALT
                         >;
                 };
 
@@ -88,7 +88,7 @@
    &kp F1     &kp F2     &kp F3       &kp F4        &kp F5        &kp F6            &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
    &kp LG(1)  &kp LG(2)  &kp LG(3)    &kp LG(4)     &kp LG(5)     &kp LG(6)         &bt BT_CLR     &bt BT_SEL 0  &bt BT_SEL 1  &none         &none         &none
    &none      &none      &none        &kp C_BRI_DN  &kp C_BRI_UP  &none             &kp C_MUTE     &kp C_VOL_DN  &kp C_VOL_UP  &none         &none         &none
-                                      &kp LGUI      &kp SPACE     &mt LSHFT CAPS    &tog DEFAULT   &none         &none
+                                      &kp LGUI      &kp SPACE     &lt LSHFT CAPS    &to DEFAULT   &none         &none
                         >;
                 };
         };
