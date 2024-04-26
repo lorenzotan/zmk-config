@@ -13,6 +13,10 @@
 #define SYMBOL 2
 #define FUNCTION 3
 
+&mt {
+        tapping-term-ms = <150>;
+};
+
 / {
         behaviors {
                 l_skp_wrd: l_skip_word {
