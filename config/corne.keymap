@@ -14,11 +14,7 @@
 #define FUNCTION 3
 
 &mt {
-        flavor = "tap-preferred";
-        tapping-term-ms = <100>;
-        quick-tap-ms = <100>;
         require-prior-idle-ms = <100>;
-        retro-tap;
 };
 
 / {
