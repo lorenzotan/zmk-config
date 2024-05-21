@@ -47,7 +47,7 @@
                 compatible = "zmk,combos";
                 combo_layer {
                         timeout-ms = <50>;
-                        key-positions = <38 39>;
+                        key-positions = <37 40>;
                         bindings = <&mo FUNCTION>;
                 };
         };
